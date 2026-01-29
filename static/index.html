@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.L.A.S.T. | Local Testcase Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-orb orb-1"></div>
+    <div class="glass-orb orb-2"></div>
+    
+    <main class="container">
+        <header>
+            <h1>B.L.A.S.T. <span>Pilot</span></h1>
+            <p>Local LLM Testcase Generator</p>
+        </header>
+
+        <section class="chat-container" id="chatContainer">
+            <div class="message system">
+                <div class="bubble">
+                    Hello! I am your System Pilot. Enter a feature description below, and I will generate structured test cases using Ollama.
+                </div>
+            </div>
+        </section>
+
+        <section class="input-area">
+            <textarea id="userInput" placeholder="Describe the feature (e.g., User Login with MFA)..."></textarea>
+            <button id="generateBtn">
+                <span class="btn-text">Generate</span>
+                <div class="loader hidden"></div>
+            </button>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
